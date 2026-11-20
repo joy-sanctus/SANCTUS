@@ -1,1 +1,31 @@
-<div class="box"><h3>St. Margaret of Scotland - 16 Nov</h3><p>Queen who fed the poor. Latin: <i>Caritas = Love / Charity</i></p></div>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Saints Library - SANCTUS</title>
+<style>body{margin:0;font-family:Arial;background:#fdf8f0;text-align:center}.top{background:#1a3a2a;color:white;padding:30px}.box{background:white;margin:15px auto;max-width:600px;padding:20px;border-radius:15px;text-align:left;box-shadow:0 2px 10px rgba(0,0,0,0.1)}.btn{display:inline-block;background:#e8b400;color:#111;padding:12px 25px;border-radius:30px;font-weight:bold;text-decoration:none;margin:5px}input{width:90%;max-width:500px;padding:14px;border-radius:30px;border:2px solid #e8b400;font-size:16px;margin:15px}</style>
+</head><body>
+<div class="top"><h1>📚 Saints Library</h1><p>All saints, all Latin words</p><a class="btn" href="index.html">← Back Home</a></div>
+
+<input type="text" id="search" placeholder="🔍 Search saint... e.g. Cecilia, Joseph, Mary" onkeyup="filterSaints()">
+
+<div id="list">
+<div class="box saint"><h3>St. Cecilia - 22 Nov</h3><p><b>Patron of Music</b><br>She sang to God even in trouble.</p><p>Latin: <i>Sanctus = Holy</i> | Say: SAHN-toos</p><p>🙏 St. Cecilia, pray for us to sing God's praise. Amen.</p></div>
+
+<div class="box saint"><h3>St. Joseph - 19 Mar</h3><p><b>Patron of Workers & Fathers</b><br>Protector of Mary and Jesus.</p><p>Latin: <i>Pax = Peace</i> | Say: PAHKS</p><p>🙏 St. Joseph, pray for our families. Amen.</p></div>
+
+<div class="box saint"><h3>St. Mary - 15 Aug</h3><p><b>Mother of Jesus</b><br>Full of grace, our mother.</p><p>Latin: <i>Gratia = Grace</i> | Say: GRAH-tee-ah</p><p>🙏 Holy Mary, pray for us. Amen.</p></div>
+
+<div class="box saint"><h3>St. Francis of Assisi - 4 Oct</h3><p><b>Patron of Animals & Nature</b><br>Loved all creation.</p><p>Latin: <i>Laudato = Praised</i> | Say: low-DAH-toh</p><p>🙏 St. Francis, help us love creation. Amen.</p></div>
+
+<div class="box saint"><h3>St. Anthony of Padua - 13 Jun</h3><p><b>Patron of Lost Things</b><br>Great preacher.</p><p>Latin: <i>Fides = Faith</i> | Say: FEE-des</p><p>🙏 St. Anthony, pray for us. Amen.</p></div>
+</div>
+
+<div class="box"><p>New saints added every day. Want them on WhatsApp at 6 AM? <a href="https://wa.me/256700000000?text=I%20want%20SANCTUS">Join here</a></p></div>
+
+<script>
+function filterSaints(){
+  let q = document.getElementById('search').value.toLowerCase();
+  document.querySelectorAll('.saint').forEach(s => {
+    s.style.display = s.innerText.toLowerCase().includes(q) ? 'block' : 'none';
+  });
+}
+</script>
+</body></html>
