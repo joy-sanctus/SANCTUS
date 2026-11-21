@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Saints Library - SANCTUS</title>
-<style>body{margin:0;font-family:Arial;background:#fdf8f0;text-align:center}.top{background:#1a3a2a;color:white;padding:30px}.box{background:white;margin:15px auto;max-width:600px;padding:20px;border-radius:15px;text-align:left;box-shadow:0 2px 10px rgba(0,0,0,0.1)}.btn{display:inline-block;background:#e8b400;color:#111;padding:12px 25px;border-radius:30px;font-weight:bold;text-decoration:none;margin:5px}input{width:90%;max-width:500px;padding:14px;border-radius:30px;border:2px solid #e8b400;font-size:16px;margin:15px}</style>
+<style>body{margin:0;font-family:Arial;background:#fdf8f0;text-align:center}.top{background:#1a3a2a;color:white;padding:30px}.box{background:white;margin:15px auto;max-width:650px;padding:20px;border-radius:15px;text-align:left;box-shadow:0 2px 10px rgba(0,0,0,0.1)}.btn{display:inline-block;background:#e8b400;color:#111;padding:12px 25px;border-radius:30px;font-weight:bold;text-decoration:none;margin:5px}input{width:90%;max-width:500px;padding:14px;border-radius:30px;border:2px solid #e8b400;font-size:16px;margin:15px}.month{background:#1a3a2a;color:white;padding:10px;border-radius:10px;max-width:650px;margin:25px auto 5px}.verse{background:#f0f7f0;padding:10px;border-left:4px solid #1a3a2a;margin:10px 0;font-style:italic}</style>
 </head><body>
-<div class="top"><h1>📚 Saints Library</h1><p>All saints, all Latin words</p><a class="btn" href="index.html">← Back Home</a></div>
+<div class="top"><h1>Saints Library</h1><p>Catholic Saints | Scripture | Latin</p><a class="btn" href="index.html">Back Home</a></div>
+<input type="text" id="search" placeholder="Search saint... e.g. Mary, Joseph, Cecilia" onkeyup="filterSaints()">
+<div id="list">
 
-<input type="text" id="search" placeholder="🔍 Search saint... e.g. Cecilia, Joseph, Mary" onkeyup="filterSaints()">
+<div class="month"><h2>JANUARY</h2></div>
+<div class="box saint"><h3>1 Jan - Mary, Mother of God</h3><p><b>Catholic:</b> We begin the year under Mary's mantle, Mother of God.</p><div class="verse">"Behold, your mother." - John 19:27</div><p>Latin: <i>Mater Dei = Mother of God</i></p><p>Prayer: Holy Mary, Mother of God, pray for us. Amen.</p></div>
+<div class="box saint"><h3>3 Jan - Holy Name of Jesus</h3><p><b>Catholic:</b> At the Name of Jesus every knee shall bow.</p><div class="verse">"There is no other name under heaven given to men by which we must be saved." - Acts 4:12</div><p>Latin: <i>Iesus = God Saves</i></p><p>Prayer: Jesus, we adore Your Holy Name. Amen.</p></div>
+<div class="box saint"><h3>6 Jan - Epiphany</h3><p><b>Catholic:</b> The Magi adored Christ. We adore Him in the Eucharist.</p><div class="verse">"They fell down and worshiped him." - Matthew 2:11</div><p>Latin: <i>Epiphania = Manifestation</i></p><p>Prayer: Lord, we bring You our hearts. Amen.</p></div>
+<div class="box saint"><h3>17 Jan - St. Anthony the Abbot</h3><p><b>Catholic:</b> Father of monks, man of prayer in the desert.</p><div class="verse">"Pray without ceasing." - 1 Thessalonians 5:17</div><p>Latin: <i>Oratio = Prayer</i></p><p>Prayer: St. Anthony, teach us to pray. Amen.</p></div>
+<div class="box saint"><h3>21 Jan - St. Agnes</h3><p><b>Catholic:</b> Virgin Martyr at 13, pure for Christ.</p><div class="verse">"Blessed are the pure in heart, for they shall see God." - Matthew 5:8</div><p>Latin: <i>Agnus = Lamb</i></p><p>Prayer: St. Agnes, pray for our youth. Amen.</p></div>
+<div class="box saint"><h3>28 Jan - St. Thomas Aquinas</h3><p><b>Catholic:</b> Doctor of the Church, faith and reason.</p><div class="verse">"You shall know the truth, and the truth shall make you free." - John 8:32</div><p>Latin: <i>Veritas = Truth</i></p><p>Prayer: St. Thomas, help us seek truth. Amen.</p></div>
 
-<div id="list"><div class="box saint"><h3>Presentation of Mary - 21 Nov</h3><p><b>Mother of Jesus, Presented to God</b><br>As a child, Mary was given to God in the Temple.</p><p>Latin: <i>Praesentatio = Presentation</i> | Say: pray-zen-TAH-tee-oh</p><p>🙏 Holy Mary, help us present our lives to God. Amen.</p></div>
-<div class="box saint"><h3>St. Cecilia - 22 Nov</h3><p><b>Patron of Music</b><br>She sang to God even in trouble.</p><p>Latin: <i>Sanctus = Holy</i> | Say: SAHN-toos</p><p>🙏 St. Cecilia, pray for us to sing God's praise. Amen.</p></div>
+<div class="month"><h2>FEBRUARY</h2></div>
+<div class="box saint"><h3>2 Feb - Presentation of the Lord</h3><p><b>Catholic:</b> Mary and Joseph present Jesus in the Temple.</p><div class="verse">"A light for revelation to the Gentiles." - Luke 2:32</div><p>Latin: <i>Lumen = Light</i></p><p>Prayer: Jesus, Light of the world, enlighten us. Amen.</p></div>
+<div class="box saint"><h3>11 Feb - Our Lady of Lourdes</h3><p><b>Catholic:</b> Mary calls us to penance and Rosary.</p><div class="verse">"Do whatever he tells you." - John 2:5</div><p>Latin: <i>Immaculata = Spotless</i></p><p>Prayer: Our Lady of Lourdes, pray for the sick. Amen.</p></div>
+<div class="box saint"><h3>14 Feb - St. Valentine</h3><p><b>Catholic:</b> True love is sacrifice as Christ loved.</p><div class="verse">"Greater love has no man than this, that a man lay down his life for his friends." - John 15:13</div><p>Latin: <i>Caritas = True Love</i></p><p>Prayer: St. Valentine, teach us to love. Amen.</p></div>
+<div class="box saint"><h3>22 Feb - Chair of St. Peter</h3><p><b>Catholic:</b> Authority Christ gave to Peter and the Popes.</p><div class="verse">"You are Peter, and on this rock I will build my church." - Matthew 16:18</div><p>Latin: <i>Cathedra = Chair</i></p><p>Prayer: St. Peter, pray for the Church. Amen.</p></div>
 
-<div class="box saint"><h3>St. Joseph - 19 Mar</h3><p><b>Patron of Workers & Fathers</b><br>Protector of Mary and Jesus.</p><p>Latin: <i>Pax = Peace</i> | Say: PAHKS</p><p>🙏 St. Joseph, pray for our families. Amen.</p></div>
+<div class="month"><h2>MARCH</h2></div>
+<div class="box saint"><h3>17 Mar - St. Patrick</h3><p><b>Catholic:</b> Taught the Trinity with the Shamrock.</p><div class="verse">"Go therefore and make disciples of all nations." - Matthew 28:19</div><p>Latin: <i>Trinitas = Trinity</i></p><p>Prayer: St. Patrick, strengthen our faith. Amen.</p></div>
+<div class="box saint"><h3>19 Mar - St. Joseph</h3><p><b>Catholic:</b> Protector of Holy Family and Church.</p><div class="verse">"Joseph, son of David, do not fear to take Mary your wife." - Matthew 1:20</div><p>Latin: <i>Custos = Guardian</i></p><p>Prayer: St. Joseph, protect our families. Amen.</p></div>
+<div class="box saint"><h3>25 Mar - Annunciation</h3><p><b>Catholic:</b> The Word became Flesh. We pray the Angelus.</p><div class="verse">"Behold, I am the handmaid of the Lord; let it be to me according to your word." - Luke 1:38</div><p>Latin: <i>Fiat = Let it be done</i></p><p>Prayer: Mary, help us say Fiat. Amen.</p></div>
 
-<div class="box saint"><h3>St. Mary - 15 Aug</h3><p><b>Mother of Jesus</b><br>Full of grace, our mother.</p><p>Latin: <i>Gratia = Grace</i> | Say: GRAH-tee-ah</p><p>🙏 Holy Mary, pray for us. Amen.</p></div>
+<div class="month"><h2>APRIL</h2></div>
+<div class="box saint"><h3>Easter - Resurrection</h3><p><b>Catholic:</b> Christ is Risen! Centre of our faith.</p><div class="verse">"He is not here; he has risen." - Luke 24:6</div><p>Latin: <i>Resurrectio = Resurrection</i></p><p>Prayer: Risen Jesus, fill us with joy. Amen.</p></div>
+<div class="box saint"><h3>Divine Mercy Sunday</h3><p><b>Catholic:</b> Jesus, I trust in You.</p><div class="verse">"Blessed are the merciful, for they shall obtain mercy." - Matthew 5:7</div><p>Latin: <i>Misericordia = Mercy</i></p><p>Prayer: Jesus, I trust in You. Amen.</p></div>
+<div class="box saint"><h3>25 Apr - St. Mark</h3><p><b>Catholic:</b> Proclaimed the Gospel to the world.</p><div class="verse">"Go into all the world and preach the gospel." - Mark 16:15</div><p>Latin: <i>Evangelium = Good News</i></p><p>Prayer: St. Mark, help us proclaim the Gospel. Amen.</p></div>
+<div class="box saint"><h3>29 Apr - St. Catherine of Siena</h3><p><b>Catholic:</b> Loved the Church and the Pope.</p><div class="verse">"That they may all be one." - John 17:21</div><p>Latin: <i>Ecclesia = Church</i></p><p>Prayer: St. Catherine, pray for unity. Amen.</p></div>
 
-<div class="box saint"><h3>St. Francis of Assisi - 4 Oct</h3><p><b>Patron of Animals & Nature</b><br>Loved all creation.</p><p>Latin: <i>Laudato = Praised</i> | Say: low-DAH-toh</p><p>🙏 St. Francis, help us love creation. Amen.</p></div>
+<div class="month"><h2>MAY</h2></div>
+<div class="box saint"><h3>1 May - St. Joseph the Worker</h3><p><b>Catholic:</b> Work offered to God becomes prayer.</p><div class="verse">"Whatever you do, work heartily, as for the Lord." - Colossians 3:23</div><p>Latin: <i>Labor = Work</i></p><p>Prayer: St. Joseph, bless our work. Amen.</p></div>
+<div class="box saint"><h3>13 May - Our Lady of Fatima</h3><p><b>Catholic:</b> Pray the Rosary daily for peace.</p><div class="verse">"Pray always and do not lose heart." - Luke 18:1</div><p>Latin: <i>Rosarium = Rosary</i></p><p>Prayer: Our Lady of Fatima, pray for us. Amen.</p></div>
+<div class="box saint"><h3>22 May - St. Rita</h3><p><b>Catholic:</b> Patron of impossible cases.</p><div class="verse">"With God all things are possible." - Matthew 19:26</div><p>Latin: <i>Patientia = Patience</i></p><p>Prayer: St. Rita, pray for our needs. Amen.</p></div>
+<div class="box saint"><h3>31 May - Visitation</h3><p><b>Catholic:</b> Mary brings Jesus to Elizabeth.</p><div class="verse">"My soul magnifies the Lord." - Luke 1:46</div><p>Latin: <i>Magnificat = Glorifies</i></p><p>Prayer: Mary, help us bring Jesus to all. Amen.</p></div>
 
-<div class="box saint"><h3>St. Anthony of Padua - 13 Jun</h3><p><b>Patron of Lost Things</b><br>Great preacher.</p><p>Latin: <i>Fides = Faith</i> | Say: FEE-des</p><p>🙏 St. Anthony, pray for us. Amen.</p></div>
+<div class="month"><h2>JUNE</h2></div>
+<div class="box saint"><h3>13 Jun - St. Anthony of Padua</h3><p><b>Catholic:</b> Held the Child Jesus, patron of lost things.</p><div class="verse">"Ask, and it will be given you; seek, and you will find." - Matthew 7:7</div><p>Latin: <i>Fides = Faith</i></p><p>Prayer: St. Anthony, pray for us. Amen.</p></div>
+<div class="box saint"><h3>Sacred Heart of Jesus</h3><p><b>Catholic:</b> His Heart burns with love in the Blessed Sacrament.</p><div class="verse">"Come to me, all who labor and are heavy laden, and I will give you rest." - Matthew 11:28</div><p>Latin: <i>Cor Iesu = Heart of Jesus</i></p><p>Prayer: Sacred Heart of Jesus, have mercy. Amen.</p></div>
+<div class="box saint"><h3>29 Jun - Sts. Peter & Paul</h3><p><b>Catholic:</b> Two pillars of the Church.</p><div class="verse">"You are Peter, and on this rock I will build my church." - Matthew 16:18</div><p>Latin: <i>Petra = Rock</i></p><p>Prayer: Sts. Peter and Paul, pray for us. Amen.</p></div>
+
+<div class="month"><h2>JULY</h2></div>
+<div class="box saint"><h3>11 Jul - St. Benedict</h3><p><b>Catholic:</b> Ora et Labora - Pray and Work.</p><div class="verse">"Pray constantly." - 1 Thessalonians 5:17</div><p>Latin: <i>Ora et Labora = Pray and Work</i></p><p>Prayer: St. Benedict, teach us to pray. Amen.</p></div>
+<div class="box saint"><h3>16 Jul - Our Lady of Mount Carmel</h3><p><b>Catholic:</b> Mary of the Brown Scapular.</p><div class="verse">"Behold your mother." - John 19:27</div><p>Latin: <i>Scapulare = Scapular</i></p><p>Prayer: Our Lady of Carmel, protect us. Amen.</p></div>
+<div class="box saint"><h3>31 Jul - St. Ignatius of Loyola</h3><p><b>Catholic:</b> For the Greater Glory of God.</p><div class="verse">"Do all to the glory of God." - 1 Corinthians 10:31</div><p>Latin: <i>Ad Maiorem Dei Gloriam</i></p><p>Prayer: St. Ignatius, teach us. Amen.</p></div>
+
+<div class="month"><h2>AUGUST</h2></div>
+<div class="box saint"><h3>4 Aug - St. John Vianney</h3><p><b>Catholic:</b> Patron of priests, man of Confession.</p><div class="verse">"Whose sins you forgive are forgiven them." - John 20:23</div><p>Latin: <i>Confessio = Confession</i></p><p>Prayer: St. John Vianney, pray for priests. Amen.</p></div>
+<div class="box saint"><h3>15 Aug - Assumption of Mary</h3><p><b>Catholic:</b> Taken body and soul into Heaven.</p><div class="verse">"The Mighty One has done great things for me." - Luke 1:49</div><p>Latin: <i>Assumptio = Taken Up</i></p><p>Prayer: Our Lady, pray for us. Amen.</p></div>
+<div class="box saint"><h3>28 Aug - St. Augustine</h3><p><b>Catholic:</b> From sinner to Saint by grace.</p><div class="verse">"You have made us for yourself, O Lord, and our heart is restless until it rests in you." - St. Augustine, Confessions</div><p>Latin: <i>Gratia = Grace</i></p><p>Prayer: St. Augustine, pray for conversion. Amen.</p></div>
+
+<div class="month"><h2>SEPTEMBER</h2></div>
+<div class="box saint"><h3>8 Sep - Nativity of Mary</h3><p><b>Catholic:</b> Dawn of our salvation.</p><div class="verse">"Blessed are you among women." - Luke 1:42</div><p>Latin: <i>Nativitas = Birth</i></p><p>Prayer: Holy Mary, we celebrate you. Amen.</p></div>
+<div class="box saint"><h3>14 Sep - Holy Cross</h3><p><b>Catholic:</b> By Your Holy Cross You redeemed the world.</p><div class="verse">"God shows his love for us in that while we were yet sinners Christ died for us." - Romans 5:8</div><p>Latin: <i>Crux = Cross</i></p><p>Prayer: We adore You, O Christ. Amen.</p></div>
+<div class="box saint"><h3>23 Sep - St. Padre Pio</h3><p><b>Catholic:</b> Pray, hope, don't worry.</p><div class="verse">"Cast all your anxieties on him, for he cares about you." - 1 Peter 5:7</div><p>Latin: <i>Stigmata = Wounds</i></p><p>Prayer: Padre Pio, teach us to trust. Amen.</p></div>
+<div class="box saint"><h3>29 Sep - Archangels Michael, Gabriel, Raphael</h3><p><b>Catholic:</b> Protect us in battle.</p><div class="verse">"He will give his angels charge of you." - Psalm 91:11</div><p>Latin: <i>Angelus = Messenger</i></p><p>Prayer: St. Michael, defend us. Amen.</p></div>
+
+<div class="month"><h2>OCTOBER</h2></div>
+<div class="box saint"><h3>1 Oct - St. Therese of Lisieux</h3><p><b>Catholic:</b> Little Way - small things with great love.</p><div class="verse">"Unless you become like children, you will never enter the kingdom of heaven." - Matthew 18:3</div><p>Latin: <i>Parva Via = Little Way</i></p><p>Prayer: St. Therese, teach us. Amen.</p></div>
+<div class="box saint"><h3>4 Oct - St. Francis of Assisi</h3><p><b>Catholic:</b> Instrument of peace.</p><div class="verse">"Blessed are the peacemakers." - Matthew 5:9</div><p>Latin: <i>Pax et Bonum = Peace and Good</i></p><p>Prayer: Make us instruments of peace. Amen.</p></div>
+<div class="box saint"><h3>7 Oct - Our Lady of the Rosary</h3><p><b>Catholic:</b> Meditate on Christ with Mary.</p><div class="verse">"His mother kept all these things in her heart." - Luke 2:51</div><p>Latin: <i>Rosarium = Rosary</i></p><p>Prayer: Our Lady of the Rosary, pray for us. Amen.</p></div>
+<div class="box saint"><h3>22 Oct - St. John Paul II</h3><p><b>Catholic:</b> Do not be afraid! Open doors to Christ.</p><div class="verse">"Be not afraid." - John 6:20</div><p>Latin: <i>Totus Tuus = Totally Yours</i></p><p>Prayer: St. John Paul II, pray for youth. Amen.</p></div>
+
+<div class="month"><h2>NOVEMBER</h2></div>
+<div class="box saint"><h3>1 Nov - All Saints</h3><p><b>Catholic:</b> Our goal is Heaven.</p><div class="verse">"Be holy, for I am holy." - 1 Peter 1:16</div><p>Latin: <i>Sanctus = Holy</i></p><p>Prayer: All Saints, pray for us. Amen.</p></div>
+<div class="box saint"><h3>2 Nov - All Souls</h3><p><b>Catholic:</b> We pray for souls in Purgatory.</p><div class="verse">"Eternal rest grant unto them, O Lord." - 2 Maccabees 12:46</div><p>Latin: <i>Requiescat in Pace = Rest in Peace</i></p><p>Prayer: Eternal rest grant unto them. Amen.</p></div>
+<div class="box saint"><h3>21 Nov - Presentation of Mary</h3><p><b>Catholic:</b> Mary gave her whole life to God.</p><div class="verse">"Behold, I am the handmaid of the Lord." - Luke 1:38</div><p>Latin: <i>Praesentatio = Presentation</i></p><p>Prayer: Holy Mary, help us. Amen.</p></div>
+<div class="box saint"><h3>22 Nov - St. Cecilia</h3><p><b>Catholic:</b> Sang to God even in martyrdom.</p><div class="verse">"Sing to the Lord a new song." - Psalm 96:1</div><p>Latin: <i>Cantate Domino = Sing to the Lord</i></p><p>Prayer: St. Cecilia, help us sing God's praise. Amen.</p></div>
+<div class="box saint"><h3>30 Nov - St. Andrew</h3><p><b>Catholic:</b> Brought others to Christ.</p><div class="verse">"Come, follow me, and I will make you fishers of men." - Matthew 4:19</div><p>Latin: <i>Piscator Hominum = Fisher of Men</i></p><p>Prayer: St. Andrew, help us bring others. Amen.</p></div>
+
+<div class="month"><h2>DECEMBER</h2></div>
+<div class="box saint"><h3>8 Dec - Immaculate Conception</h3><p><b>Catholic:</b> Conceived without sin to be Mother of Jesus.</p><div class="verse">"Hail, full of grace, the Lord is with you." - Luke 1:28</div><p>Latin: <i>Immaculata = Spotless</i></p><p>Prayer: O Mary conceived without sin, pray for us. Amen.</p></div>
+<div class="box saint"><h3>12 Dec - Our Lady of Guadalupe</h3><p><b>Catholic:</b> Mother of the Americas.</p><div class="verse">"Blessed is she who believed." - Luke 1:45</div><p>Latin: <i>Mater Nostra = Our Mother</i></p><p>Prayer: Our Lady of Guadalupe, pray for us. Amen.</p></div>
+<div class="box saint"><h3>13 Dec - St. Lucy</h3><p><b>Catholic:</b> Her name means Light.</p><div class="verse">"You are the light of the world." - Matthew 5:14</div><p>Latin: <i>Lux = Light</i></p><p>Prayer: St. Lucy, help us see by faith. Amen.</p></div>
+<div class="box saint"><h3>25 Dec - Christmas</h3><p><b>Catholic:</b> The Word became Flesh.</p><div class="verse">"And the Word became flesh and dwelt among us." - John 1:14</div><p>Latin: <i>Natus Est = He is Born</i></p><p>Prayer: Infant Jesus, we adore You. Amen.</p></div>
+
 </div>
-
-<div class="box"><p>New saints added every day. Want them on WhatsApp at 6 AM? <a href="https://wa.me/256700000000?text=I%20want%20SANCTUS">Join here</a></p></div>
-
-<script>
-function filterSaints(){
-  let q = document.getElementById('search').value.toLowerCase();
-  document.querySelectorAll('.saint').forEach(s => {
-    s.style.display = s.innerText.toLowerCase().includes(q) ? 'block' : 'none';
-  });
-}
-</script>
+<script>function filterSaints(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.saint').forEach(s=>{s.style.display=s.innerText.toLowerCase().includes(q)?'block':'none'});document.querySelectorAll('.month').forEach(m=>{m.style.display=q?'none':'block'})}</script>
 </body></html>
